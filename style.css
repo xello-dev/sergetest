@@ -1,0 +1,264 @@
+@charset "utf-8";
+
+
+img{
+  border:none;
+}
+body, h1 { 
+    margin: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;      
+}
+li {
+    padding-right: 40px;
+}
+
+.hr a:hover:after,
+.hr a:focus:after {
+width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.hr a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 2px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #225384; /*цвет фона элемента*/
+    transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+    }
+
+ul.hr {
+    margin: 0; /* Обнуляем значение отступов */
+    padding: 4px; /* Значение полей */
+    list-style-type: none;
+    display: inline-flex;    
+   }
+
+ul.hr.li {
+    display: inline; /* Отображать как строчный элемент */
+    margin-right: 5px; /* Отступ слева */
+    border: 1px solid #000; /* Рамка вокруг текста */
+    padding: 3px; /* Поля вокруг текста */
+    text-decoration: none;
+   }
+
+.head {
+background-color:#FFF;
+height: 5vh;
+margin: auto;
+margin-top: 0px;
+position: fixed;
+
+width: 100%;
+}
+
+.menu {    
+    flex-direction: row;
+    margin: 0 auto;
+    text-align: center; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;        
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    position: fixed;
+    width: 100%;
+    height: 77px;
+    top: 0;
+    z-index: 100000;
+}
+
+.menutext {
+    width: 1000px;
+    display: block;
+    margin-top: 19px;
+}
+
+span {
+    margin-left: 30px;
+}
+
+.logo {
+    margin-top: 12px;
+    float: left;
+    margin-left: 20px;
+    display: block;
+
+}
+
+.button {
+    display: block;
+    float: right;
+    background-color:#4eb759;
+    padding: 15px 30px 18px 30px;
+    border-radius: 50px;    
+    margin: 10px 10px 10px 10px;
+    color: white;
+    width: 129px;
+    
+}
+
+
+.button1 {
+    display: block;
+    background-color:#4eb759;
+    padding: 15px 30px 18px 30px;
+    border-radius: 50px;    
+    margin: 10px 10px 10px 10px;
+    color: white;
+    width: 129px;
+    margin-left: 100px;
+}
+.button:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.button1:hover {
+    
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 1s;
+}
+.telo {
+    
+    height: 200px;
+    width: 1270px;
+    margin: auto;
+    margin-top: 112px;
+    display: flex;
+    }
+
+.footer {
+background-color: grey;
+height: 150px;
+width: 1270px;
+margin: auto;
+margin-top: 0px;
+display: block;
+bottom: 0;
+}
+.polosa {
+    height: 3px;
+    background-color: #eee;
+    width: 100%;
+    position: absolute;
+    display: block;
+}
+.slider {
+    height: 500px;
+    background-color: rgb(44, 153, 196);
+    width: 1270px;
+    margin: 0 auto;
+    background: url(VF4as4GkUbI.jpg) no-repeat center center;
+    border-radius: 10px;
+    margin-top: 77px;
+}
+
+.col1 {
+width: 33.33%;
+display: block;
+background-color: #1d1f1f;
+height: 150px;
+display: flex;
+border-radius: 10px;
+margin-top: 15px;
+margin-right: 10px;
+}
+.col2 {
+width: 33.33%;
+background-color: #347d3d;
+display: block;
+height: 150px;
+display: flex;
+border-radius: 10px;
+margin-top: 15px;
+margin-right: 10px;
+
+}
+.col3 {
+width: 34%;
+background-color: rgb(81 160 90);
+display: block;
+height: 150px;
+display: flex;
+border-radius: 10px;
+margin-top: 15px;
+    
+}
+
+.headerslider h1{
+   font-size: 55px;
+   width: 600px;
+   color: white;
+   margin-top: 110px;
+   margin-left: 100px;
+   LINE-HEIGHT: 61PX;
+   font-weight: 400;
+   border-left: 6px solid rgb(255, 255, 255); /* Параметры линии */ 
+   padding-left: 25px; /* Расстояние от линии до текста */ 
+}
+.textslider h2 {
+   font-size: 22px;
+   color: white;
+   width: 500px;
+   margin-top: 15px;
+   margin-left: 100px;
+   font-weight: 100;
+}
+
+.zaslonka {
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgb(0 43 24) 0%, rgba(0,0,0,0) 100%);
+    width: 1270px;
+    height: 500px;
+    margin: auto;
+    position: absolute;
+    border-radius: 10px;
+}
+
+.pic {
+    width: 80px;
+    margin-top: 35px;
+    margin-left: 35px;
+    filter: invert(1);
+    cursor: pointer;
+}
+
+.pic:hover {
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+.text2 {
+    margin-left: 29px;
+    width: 254px;
+    margin-top: 38px;
+    color: white;
+}
+
+.dev {
+    position: absolute;
+    display: block;
+    bottom: 0px;
+    right: 130px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    flex-flow: wrap;
+        margin: auto;
+    
+}
+.container1 {
+    min-width: 6.25%;
+    height: 1300px;
+  
+
+    
+}
