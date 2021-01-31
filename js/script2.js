@@ -1,5 +1,7 @@
 "use strict";
 
+    
+}
 // const answers = [];
 
 // answers[0] = prompt("Ваше имя?", "");
@@ -11,5 +13,5 @@
 // const user = 'Serge';
 // alert(`ПРивет,${user}`);
 
-incr++;
-decr--;
+// incr++;
+// decr--;
