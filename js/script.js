@@ -1,15 +1,61 @@
-"use strict";
+/* Задание на урок:
 
-// const answers = [];
+1) Создать переменную numberOfFilms и в неё поместить ответ от пользователя на вопрос:
+'Сколько фильмов вы уже посмотрели?'
 
-// answers[0] = prompt("Ваше имя?", "");
-// answers[1] = prompt("Ваша  фамилия?", "");
-// answers[2] = prompt("Сколько вам лет?", "");
+2) Создать объект personalMovieDB и в него поместить такие свойства:
+    - count - сюда передается ответ на первый вопрос
+    - movies - в это свойство поместить пустой объект
+    - actors - тоже поместить пустой объект
+    - genres - сюда поместить пустой массив
+    - privat - в это свойство поместить boolean(логическое) значение false
 
-// document.write(answers);
+3) Задайте пользователю по два раза вопросы:
+    - 'Один из последних просмотренных фильмов?'
+    - 'На сколько оцените его?'
+Ответы стоит поместить в отдельные переменные
+Записать ответы в объект movies в формате: 
+    movies: {
+        'logan': '8.1'
+    }
 
-// const user = 'Serge';
-// alert(`ПРивет,${user}`);
+Проверить, чтобы все работало без ошибок в консоли */
 
-incr++;
-decr--;
+'use strict';
+
+// const numberOfFilms = +prompt("Сколько фильмов вы же смотрели?", "");
+// const personalMovieDB = {
+//     count: numberOfFilms,
+//     movies: {},
+//     actors: {},
+//     //genres: [],
+//     //privat: false
+// };
+
+// const a = prompt("Один из последних просмотренных фильмов", ""),
+//       b = prompt("а сколько оцените его?", ""),
+//       c = prompt("Один из последних просмотренных фильмов", ""),
+//       d = prompt("а сколько оцените его?", "");
+
+// personalMovieDB.movies[a] = b;
+// personalMovieDB.movies[c] = d;
+// console.log(personalMovieDB);    
+    
+
+
+const Kolvofilmov = +prompt('Сколько фильмов вам удалось посмотреть?', '');
+
+const db = {
+     count: Kolvofilmov,        
+     movies: {}
+};
+
+const a = prompt('Название', ''),
+      b = prompt('Оценка', ''),
+      c = prompt('Название', ''),
+      d = prompt('Оценка', '');
+
+db.movies[a] = b;
+db.movies[c] = d;
+
+console.log(db);
