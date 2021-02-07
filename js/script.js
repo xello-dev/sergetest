@@ -63,3 +63,8 @@ function writeYourGenres () {
     }    
 }
 writeYourGenres ();
+
+function LEarnJS(lang, callback) {
+    console.log(`УЯ учу: ${lang}`);
+    callback();
+}
