@@ -1,70 +1,18 @@
-'use strict';
-
-let numberOfFilms;
-
-function start () {
-    numberOfFilms = +prompt("Сколько фильмов вы же смотрели?", "");
-while (numberOfFilms == '' || numberOfFilms == null || isNaN(numberOfFilms)) {
-    numberOfFilms = +prompt("Сколько фильмов вы же смотрели?", "");
-     }
-}
-start();
-
+const numberOfFilms = +prompt('Сколько фильмов вы смотрели?', '0');
 const personalMovieDB = {
-    count: numberOfFilms,
+    count: {numberOfFilms},
     movies: {},
     actors: {},
     genres: [],
     privat: false
 };
 
+const a = prompt('Какой послединй фильм вы смотрели?', ''),
+      b = prompt('Сколько баллов ему поставите?', ''),
+      c = prompt('Какой послединй фильм вы смотрели??', ''),
+      d = prompt('Сколько баллов ему поставите?', '');
 
-function rememberMyFilms () {
-    for (let i=0; i<2; i++) {
-        const a = prompt("Один из последних просмотренных фильмов", ""),
-              b = prompt("а сколько оцените его?", "");
-    if (a !=null && b != null && a != '' && b != '' && a.length <50) {
-        personalMovieDB.movies[a] = b;
-        console.log('done');
-    } else {
-        console.log('error');
-        i--;
-      }
-}
-}
-// rememberMyFilms();
+personalMovieDB.movies[a] = b;
+personalMovieDB.movies[c] = d;
 
-
-function detectPersonalLevel() {
-    if (personalMovieDB.count <10) {
-        console.log('Мало фильмов');
-    } else if (personalMovieDB.count >= 10 && personalMovieDB.count < 30) {
-        console.log('Молодец, вы классический зритель'); 
-    } else if (personalMovieDB.count > 30) {
-        console.log('Вы киноман');
-    } else {
-        console.log('Ошибка');
-    }
-    console.log(personalMovieDB);    
-}
-// detectPersonalLevel();
-
-
-function showMyDB (hidden) {
-    if  (!hidden) {
-        console.log (personalMovieDB);
-    }
-}
-showMyDB (personalMovieDB.privat);
-
-function writeYourGenres () {
-    for (let i = 1; i <= 3; i++) {
-        personalMovieDB.genres[i - 1] = prompt(`Ваш любимый жанр под номером ${i}`);
-    }    
-}
-writeYourGenres ();
-
-function LEarnJS(lang, callback) {
-    console.log(`УЯ учу: ${lang}`);
-    callback();
-}
+console.log(personalMovieDB);
